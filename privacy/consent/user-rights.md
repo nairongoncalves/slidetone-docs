@@ -1,6 +1,6 @@
 # SlideTone - User Privacy Rights
 
-**Version:** 1.0  
+**Version:** 1.1  
 **Status:** Final  
 **Date:** 2026-11-03
 
@@ -8,9 +8,9 @@
 
 # 1. Purpose
 
-This document describes the privacy rights available to users of the SlideTone application and establishes the principles for handling privacy-related requests.
+This document describes the privacy rights available to users of the SlideTone application and establishes principles for handling privacy-related requests.
 
-It serves as an internal reference for the development team and supports the preparation of the public Privacy Policy.
+It serves as an internal reference for the development team and supports the preparation and maintenance of the public Privacy Policy.
 
 SlideTone aims to handle personal information transparently and in accordance with applicable privacy and data protection regulations.
 
@@ -37,8 +37,9 @@ SlideTone is designed to minimize the collection and processing of personal info
 The application currently follows these principles:
 
 - No user accounts or registration are required.
-- User profiles and application settings are stored exclusively on the user's device.
+- Instrument profiles and application settings are stored exclusively on the user's device.
 - No cloud synchronization is provided.
+- Instrument profiles contain instrument configuration information and do not require personal information about the user.
 - Microphone audio is analyzed in real time.
 - Audio is not recorded or uploaded to SlideTone servers.
 - SlideTone does not operate its own analytics, crash-reporting, or telemetry services.
@@ -62,7 +63,9 @@ SlideTone must provide clear information about its own data-processing activitie
 
 Users may request correction of inaccurate or incomplete personal information.
 
-SlideTone does not maintain a central user profile database. User-created profiles and settings are stored locally on the device and can be managed directly within the application.
+SlideTone does not maintain a central user profile database. Instrument profiles and settings are stored locally on the device.
+
+Users can modify their instrument profiles and available application settings directly within the application.
 
 ## 4.3 Right to Deletion
 
@@ -70,7 +73,13 @@ Users may request deletion of personal information when applicable under the rel
 
 SlideTone does not maintain its own cloud-based user profile storage.
 
-User-created profiles and settings are stored locally and can be deleted through the application's available controls or by removing the application's local data.
+Instrument profiles can be individually deleted through the application's profile management controls. However, SlideTone requires at least one instrument profile to remain available.
+
+Application settings are stored locally and currently do not have an in-app reset or deletion function.
+
+Users can clear the application's locally stored data through the device's operating system settings. This action may permanently remove profiles and settings stored by the application.
+
+Uninstalling the application generally removes its local application data. However, operating system backup and restoration mechanisms may affect whether some application data is restored after reinstallation.
 
 Information processed by third-party services may be subject to the respective provider's retention and deletion procedures.
 
@@ -80,7 +89,7 @@ Users may request information about third parties that receive or process inform
 
 The selected advertising provider is Google AdMob.
 
-The final Privacy Policy must identify the relevant third-party services and describe their purposes and applicable data-processing practices.
+The public Privacy Policy must identify the relevant third-party services and describe their purposes and applicable data-processing practices.
 
 ## 4.5 Right to Withdraw Consent
 
@@ -88,7 +97,7 @@ Where processing is based on consent, users may have the right to withdraw that 
 
 Withdrawal must be as straightforward as giving consent, where required by applicable law.
 
-If Google UMP is integrated, users must be able to access the applicable privacy options and modify their advertising-related consent choices as supported by the configured service.
+If Google User Messaging Platform (UMP) is integrated, users must be able to access applicable privacy options and modify their advertising-related consent choices as supported by the configured service.
 
 Withdrawing consent does not affect the lawfulness of processing carried out before withdrawal.
 
@@ -96,15 +105,17 @@ Withdrawing consent does not affect the lawfulness of processing carried out bef
 
 Where applicable, users may object to certain processing activities, particularly when processing is based on legitimate interests or another legal basis that provides this right.
 
-Requests must be evaluated according to the applicable legal requirements and the actual data-processing activities involved.
+Requests must be evaluated according to applicable legal requirements and the actual data-processing activities involved.
 
 ## 4.7 Right to Data Portability
 
-Where applicable under the relevant privacy regulations, users may request their personal information in a structured, commonly used, and machine-readable format.
+Where applicable under relevant privacy regulations, users may request their personal information in a structured, commonly used, and machine-readable format.
 
-Because SlideTone stores profiles and settings locally, users can manage this information directly on their devices.
+SlideTone currently stores instrument profiles and application settings locally and does not provide cloud synchronization.
 
-Any additional information held by third-party services is subject to those providers' applicable procedures and legal obligations.
+The application does not currently have a confirmed data export feature. Any portability request must therefore be evaluated according to the applicable legal requirements and the technical capabilities available at the time of the request.
+
+Information held by third-party services is subject to those providers' applicable procedures and legal obligations.
 
 ## 4.8 Right to Request Review of Automated Decisions
 
@@ -124,13 +135,14 @@ Official website: https://www.gov.br/anpd/
 
 # 5. How to Exercise Privacy Rights
 
-Users may submit privacy-related questions or requests through the contact channel identified in the public SlideTone Privacy Policy.
+Users may submit privacy-related questions or requests through the following contact channel:
 
-The final Privacy Policy must provide a valid contact email address or another appropriate communication channel.
+**Developer:** Techminds  
+**Privacy Contact:** nairongoncalves@gmail.com
 
 A request should include enough information to allow the development team to understand and process it.
 
-SlideTone may request additional information when reasonably necessary to verify the requester's identity or clarify the request, while avoiding the collection of unnecessary personal information.
+Techminds may request additional information when reasonably necessary to verify the requester's identity or clarify the request, while avoiding the collection of unnecessary personal information.
 
 ---
 
@@ -147,22 +159,25 @@ Privacy-related requests must be handled according to the following principles:
 
 If a request concerns information processed by Google or another third-party provider, users may also need to exercise their rights through that provider's privacy channels.
 
-The SlideTone development team must provide appropriate guidance whenever possible.
+Techminds must provide appropriate guidance whenever possible.
 
 ---
 
 # 7. Local Data Management
 
-Users can manage locally stored application information through the application itself and the device's operating system.
+Users can manage locally stored application information through the application's available controls and the device's operating system.
 
 The following principles apply:
 
-- User profiles and application settings are stored on the device.
+- Instrument profiles and application settings are stored on the device.
 - SlideTone does not synchronize this information with cloud services.
-- Removing the application or clearing its local storage may delete locally stored information.
-- Users should understand that deleting local application data may be irreversible.
+- Users can individually delete instrument profiles through the application, but at least one profile must remain.
+- The application currently does not provide an in-app function to reset or delete all settings.
+- Users can clear the application's local storage through the device's operating system settings.
+- Clearing application storage may permanently remove locally stored profiles and settings.
+- Operating system backup and restoration mechanisms may affect the availability of local data after reinstallation.
 
-The final application interface and Privacy Policy must accurately describe the available deletion and management options.
+The public Privacy Policy must accurately describe the available deletion and management options.
 
 ---
 
@@ -170,7 +185,9 @@ The final application interface and Privacy Policy must accurately describe the 
 
 Google AdMob has been selected as SlideTone's advertising provider.
 
-Google may process information through its advertising SDK according to its own service terms, privacy documentation, and applicable legal obligations.
+Its SDK integration and final data-processing configuration are pending.
+
+Once integrated, Google may process information through its advertising SDK according to its own service terms, privacy documentation, and applicable legal obligations.
 
 Official privacy resources:
 
@@ -180,7 +197,7 @@ Official privacy resources:
 
 Users may need to contact Google directly or use Google's available privacy tools to exercise rights concerning information processed by Google services.
 
-The final Privacy Policy must explain the respective responsibilities of SlideTone and its third-party providers.
+The public Privacy Policy must explain the respective responsibilities of Techminds and its third-party providers.
 
 ---
 
@@ -192,7 +209,7 @@ The application must comply with applicable children's privacy regulations and G
 
 If the application is made available to children or classified as a child-directed application, additional requirements may apply to advertising, consent, and data processing.
 
-The final Privacy Policy must accurately describe the application's intended audience and applicable safeguards.
+The public Privacy Policy must accurately describe the application's intended audience and applicable safeguards.
 
 ---
 
@@ -216,6 +233,8 @@ This document describes the privacy rights and request-handling principles inten
 
 The application currently does not operate user accounts, cloud synchronization, or first-party analytics systems.
 
+Instrument profiles and application settings are stored locally through AsyncStorage. Individual profile deletion is supported, while an in-app settings reset or complete local data deletion function is not currently available.
+
 Google AdMob has been selected, but its SDK integration and final data-processing configuration remain pending.
 
-The contact channel, operational request-handling procedures, and final third-party privacy disclosures must be confirmed before this document is approved and the public Privacy Policy is published.
+The operational procedures for handling privacy requests and the final third-party privacy disclosures must be confirmed before this document is approved as final.

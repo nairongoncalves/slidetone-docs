@@ -1,6 +1,6 @@
 # SlideTone - Privacy Policy
 
-**Version:** 1.0  
+**Version:** 1.1  
 **Status:** Final  
 **Date:** 2026-11-03
 
@@ -16,7 +16,7 @@ Your privacy is important to us. This Privacy Policy explains how SlideTone acce
 
 SlideTone is designed to minimize data collection. Its core functionality operates locally on your device and does not require an account or cloud synchronization.
 
-By using SlideTone, you acknowledge the practices described in this Privacy Policy.
+This Privacy Policy describes the application's current data practices and identifies third-party services selected or evaluated for future integration.
 
 ---
 
@@ -28,7 +28,7 @@ For privacy-related questions or requests, you can contact us at:
 
 **Privacy contact:** nairongoncalves@gmail.com
 
-In this document, "SlideTone", "we", "us", and "our" refer to the application and its developer.
+In this document, "SlideTone", "we", "us", and "our" refer to the application and its developer, Techminds.
 
 ---
 
@@ -43,24 +43,48 @@ The microphone is used exclusively for real-time audio analysis to detect musica
 - Audio is analyzed locally on your device.
 - SlideTone does not record or retain audio recordings.
 - Audio is not uploaded to SlideTone servers.
-- Audio is not transmitted to external audio-processing services.
+- Audio is not transmitted to external audio-processing or speech-recognition services.
 
 Microphone access is required for the application's core tuning functionality.
 
 You can manage or revoke microphone permission through your device's Android settings. Revoking this permission will prevent the tuner from accessing microphone audio.
 
-## 3.2 User Profiles and Application Settings
+## 3.2 Instrument Profiles and Application Settings
 
 SlideTone allows you to create instrument profiles and customize application preferences.
 
-This information may include instrument configurations, profile names, and application settings.
+Instrument profiles may contain configuration information such as:
 
-All profiles and settings are stored exclusively on your device.
+- Instrument family.
+- Base pitch.
+- Playing mechanism.
+- Clef.
+- Profile name.
+- Tuning reference frequency.
+- Transposition.
+- Profile activation status.
+
+Application settings may include:
+
+- Application theme.
+- Application language.
+- Note spelling preferences.
+- Note display language.
+
+These profiles and settings are stored exclusively on your device using local application storage.
 
 - No user account is required.
 - No cloud synchronization is provided.
 - This information is not transmitted to SlideTone servers.
 - We do not maintain a remote database of user profiles or preferences.
+
+Instrument profiles contain instrument configuration information and do not require personal information about the user.
+
+You can edit your profiles and settings within the application. Individual instrument profiles can be deleted, but SlideTone requires at least one profile to remain available.
+
+The application currently does not provide an in-app function to reset all settings or delete all locally stored application data.
+
+For information about deleting locally stored data, see Section 7.
 
 ## 3.3 Application Analytics and Diagnostics
 
@@ -68,21 +92,23 @@ SlideTone does not currently use first-party analytics, crash-reporting, or tele
 
 We do not operate systems to independently track your application usage or collect behavioral analytics.
 
+This does not exclude data processing that may be performed by third-party services if they are integrated into the application in the future.
+
 ---
 
 # 4. Advertising and Third-Party Services
 
 ## 4.1 Google AdMob
 
-SlideTone uses Google AdMob to display advertisements in designated areas of the application.
+SlideTone has selected Google AdMob as its advertising provider.
 
-AdMob is provided by Google LLC and its affiliated entities.
+However, the Google Mobile Ads SDK has not yet been integrated into the application. Advertising data collection through this SDK must therefore not be considered an active SlideTone data-processing activity until integration and configuration are completed.
 
 Official website: https://admob.google.com/
 
-Advertising helps support the development and maintenance of SlideTone while allowing us to offer the application free of charge.
+Advertising is intended to help support the development and maintenance of SlideTone while allowing us to offer the application free of charge.
 
-The Google Mobile Ads SDK may automatically collect and share certain information from your device to provide, measure, and improve advertising services.
+Once integrated, the Google Mobile Ads SDK may automatically collect and share certain information from your device to provide, measure, and improve advertising services.
 
 Depending on the SDK version and configuration, this information may include:
 
@@ -108,18 +134,29 @@ For more information, please review:
 - Google Privacy Policy: https://policies.google.com/privacy
 - How Google uses information from apps that use its services: https://policies.google.com/technologies/partner-sites
 - Google Advertising Privacy: https://policies.google.com/technologies/ads
+- Google Mobile Ads SDK Data Safety disclosure: https://developers.google.com/admob/android/privacy/play-data-disclosure
+
+The exact information processed and the applicable purposes must be verified against the SDK version and configuration integrated into SlideTone.
 
 ## 4.2 Advertising Preferences
 
-The advertisements displayed in SlideTone may be personalized or non-personalized, depending on applicable privacy requirements, your device settings, and the advertising configuration.
+Once advertising is enabled, advertisements may be personalized or non-personalized depending on applicable privacy requirements, consent status, device settings, and the advertising configuration.
 
-Where required, advertising consent and privacy choices will be handled through the applicable consent-management mechanisms.
+SlideTone must not assume that all users have consented to personalized advertising.
 
-You can also review and manage advertising-related settings through your Android device settings and Google's available privacy tools.
+Where required, advertising consent and privacy choices must be handled through appropriate consent-management mechanisms.
+
+Users may also have advertising-related controls available through their Android device settings and Google's privacy tools.
+
+The availability and behavior of these choices depend on the applicable services and final implementation.
 
 ## 4.3 Google User Messaging Platform (UMP)
 
-If Google User Messaging Platform (UMP) is integrated into SlideTone, it may be used to manage applicable advertising consent requirements and privacy choices.
+Google User Messaging Platform (UMP) is Google's consent-management solution for applications using Google advertising services.
+
+UMP is currently under evaluation for SlideTone. It has not been integrated, and no consent messages or privacy options entry point have been configured.
+
+If adopted, UMP may be used to manage applicable advertising consent requirements and privacy choices.
 
 Its use and associated data processing will follow the applicable Google documentation and privacy requirements.
 
@@ -131,17 +168,21 @@ Official documentation: https://developers.google.com/admob/android/privacy
 
 ## 5.1 Local Storage
 
-User profiles and application settings are stored locally on your device.
+Instrument profiles and application settings are stored locally on your device.
 
 SlideTone does not maintain cloud storage or remote backups of this information.
 
+The application uses local storage to preserve profiles and preferences between sessions.
+
+Android device backup and restoration behavior may affect whether locally stored application data is restored after reinstalling the application. See Section 7 for further details.
+
 ## 5.2 Audio Processing
 
-Microphone audio is processed in real time and is not recorded or uploaded to SlideTone servers.
+Microphone audio is processed in real time and is not recorded, retained, or uploaded to SlideTone servers.
 
 ## 5.3 Third-Party Services
 
-Information processed by Google AdMob is subject to Google's security measures, privacy practices, and applicable service terms.
+If Google AdMob is integrated, information processed by its SDK will be subject to Google's security measures, privacy practices, and applicable service terms.
 
 Google documents that information collected by the Google Mobile Ads SDK is encrypted in transit using TLS.
 
@@ -155,7 +196,9 @@ SlideTone does not sell user profiles, application settings, or microphone audio
 
 We do not operate our own advertising infrastructure or share locally stored profiles and settings with third parties.
 
-However, Google AdMob may collect and share advertising-related information as described in Section 4 of this Privacy Policy.
+Google AdMob has been selected as our advertising provider, but its SDK integration is pending.
+
+Once integrated, Google AdMob may collect and share advertising-related information as described in Section 4 of this Privacy Policy.
 
 We recommend reviewing Google's Privacy Policy to understand how Google processes information through its advertising services.
 
@@ -165,13 +208,19 @@ We recommend reviewing Google's Privacy Policy to understand how Google processe
 
 ## 7.1 Locally Stored Information
 
-User-created profiles and application settings remain on your device until you delete them or remove the application's local data.
+Instrument profiles and application settings are stored on your device and remain there until they are changed or removed through available device or application controls.
 
-You can manage your profiles through the application.
+You can edit your instrument profiles and settings through the application.
 
-Uninstalling SlideTone or clearing its application storage may permanently remove locally stored information.
+Individual profiles can be deleted within SlideTone, but at least one profile must remain available.
 
-SlideTone does not maintain remote copies of these profiles or settings.
+SlideTone currently does not provide an in-app function to delete all profiles or reset all application settings to their default values.
+
+To remove all locally stored SlideTone application data, you can use the application storage controls available in your Android device settings. The exact steps may vary depending on your device and Android version.
+
+Uninstalling SlideTone generally removes its local application data. However, Android backup and restoration mechanisms may affect whether some application data is restored after reinstalling the application.
+
+SlideTone does not maintain remote copies of your profiles or settings.
 
 ## 7.2 Microphone Audio
 
@@ -181,7 +230,7 @@ Audio is analyzed in real time and is not uploaded to SlideTone servers.
 
 ## 7.3 Advertising Information
 
-Information collected or processed by Google AdMob is subject to Google's applicable data retention, deletion, and privacy practices.
+Once Google AdMob is integrated, information collected or processed by its SDK will be subject to Google's applicable data retention, deletion, and privacy practices.
 
 For information about Google's data retention and deletion procedures, please consult:
 
@@ -199,11 +248,13 @@ These rights may include:
 - Requesting access to your personal information.
 - Requesting correction of inaccurate information.
 - Requesting deletion of personal information where applicable.
-- Requesting information about data sharing.
+- Requesting information about data processing and sharing.
 - Withdrawing consent where processing is based on consent.
 - Objecting to certain data-processing activities where applicable.
 - Requesting data portability where provided by applicable law.
 - Filing a complaint with the relevant data protection authority.
+
+Requests involving information processed by Google services may also need to be addressed through Google's privacy mechanisms, depending on the nature of the information and applicable legal responsibilities.
 
 ## 8.1 Brazil - LGPD
 
@@ -259,7 +310,7 @@ We encourage you to review the privacy policies of any third-party services you 
 
 SlideTone's core tuning functionality works without an internet connection.
 
-An internet connection may be required to load advertisements and communicate with advertising-related services.
+An internet connection may be required to load advertisements and communicate with advertising-related services once those services are integrated.
 
 The absence of an internet connection does not prevent the application from providing its core tuning functionality.
 
@@ -280,7 +331,7 @@ We encourage you to review this document periodically.
 If you have questions, concerns, or requests regarding this Privacy Policy or SlideTone's privacy practices, please contact us:
 
 **Application:** SlideTone  
-**Developer:** Techminds
+**Developer:** Techminds  
 **Privacy Contact:** nairongoncalves@gmail.com
 
 ---

@@ -1,6 +1,6 @@
 # SlideTone - Consent Management
 
-**Version:** 1.0  
+**Version:** 1.1  
 **Status:** Final  
 **Date:** 2026-11-03
 
@@ -43,7 +43,7 @@ The following implementation status applies:
 
 Until the integration is completed, no consent-management behavior should be considered implemented or verified.
 
-----
+---
 
 # 4. Consent Management Principles
 
@@ -58,7 +58,7 @@ The application must not assume that the same consent requirements apply worldwi
 Relevant regulations may include:
 
 - Brazil's General Data Protection Law (LGPD).
-- The European Union's General Data Protection Regulation (GDPR).
+- The European Union's General Data Protection Regulation (GDPR), where applicable.
 - Other applicable regional privacy and electronic communications regulations.
 
 ## 4.2 Informed Choices
@@ -77,7 +77,7 @@ Consent interfaces must not use misleading wording or design patterns that press
 
 The application must respect the user's applicable privacy choices when making advertising requests.
 
-It must not request personalized advertising when the required consent or legal basis is absent.
+It must not request personalized advertising when the required consent or other applicable legal basis is absent.
 
 ## 4.4 Transparency
 
@@ -106,11 +106,11 @@ https://developers.google.com/admob/android/privacy
 
 ## 5.2 Consent Information Update
 
-When the application starts, the consent-management implementation must retrieve updated consent information before requesting advertisements.
-
-The implementation must follow Google's recommended UMP workflow.
+If UMP is integrated, the consent-management implementation must retrieve updated consent information according to Google's recommended workflow before making advertising requests.
 
 If a consent form is required and available, it must be presented at the appropriate point in the application lifecycle.
+
+The implementation must follow the current SDK documentation regarding the order of consent updates, form presentation, and advertising requests.
 
 ## 5.3 Consent Form Availability
 
@@ -139,7 +139,7 @@ It must not be hidden behind advertising interactions or made unnecessarily diff
 
 Before requesting advertisements, SlideTone must evaluate the current consent-management state and applicable SDK requirements.
 
-The implementation must:
+If UMP is adopted, the implementation must:
 
 1. Complete the required consent information update.
 2. Present any required consent form.
@@ -151,11 +151,13 @@ The absence of a consent form does not automatically mean that personalized adve
 
 Advertising requests must follow the final AdMob and UMP configuration and the applicable regional requirements.
 
+If UMP is not adopted, the developer must still determine and implement an appropriate approach to applicable consent and advertising restrictions before enabling ad requests.
+
 ---
 
 # 7. Consent States and Error Handling
 
-The implementation must distinguish between consent-management states.
+If a consent-management solution is integrated, the implementation must distinguish between consent-management states.
 
 The following logical states are recommended for application-level handling:
 
@@ -172,7 +174,7 @@ These are logical application-level states, not necessarily the exact status nam
 
 ---
 
-## 8. User Privacy Rights
+# 8. User Privacy Rights
 
 Users must be able to exercise applicable privacy rights under the regulations governing their personal information.
 
@@ -189,13 +191,15 @@ Requests involving information processed by Google services may need to be handl
 
 The public Privacy Policy must explain how users can contact the application developer regarding privacy-related requests.
 
+**Privacy contact:** nairongoncalves@gmail.com
+
 ---
 
-## 9. Data Storage and Consent Information
+# 9. Data Storage and Consent Information
 
 The application must distinguish between locally stored application preferences and consent information managed by third-party SDKs.
 
-User profiles and application settings remain stored exclusively on the device.
+Instrument profiles and application settings remain stored exclusively on the device.
 
 Consent information may be stored or processed by Google services and SDK components according to their documented behavior.
 
@@ -203,7 +207,7 @@ The implementation must not claim that all consent information is stored exclusi
 
 ---
 
-## 10. Offline Behavior
+# 10. Offline Behavior
 
 SlideTone's core tuning functionality must remain available offline.
 
@@ -218,7 +222,7 @@ In particular:
 
 ---
 
-## 11. Security and Privacy Requirements
+# 11. Security and Privacy Requirements
 
 The consent-management implementation must:
 
@@ -233,7 +237,7 @@ Consent-related information must not be used for purposes unrelated to the discl
 
 ---
 
-## 12. Outstanding Implementation Tasks
+# 12. Outstanding Implementation Tasks
 
 The following items must be completed before this document is considered final:
 
@@ -241,17 +245,17 @@ The following items must be completed before this document is considered final:
 - [ ] Review the current UMP compatibility and integration requirements for the selected React Native advertising SDK.
 - [ ] Configure the appropriate regional privacy messages.
 - [ ] Determine the applicable consent requirements for Brazil and other target markets.
-- [ ] Implement the consent information update workflow.
-- [ ] Implement required consent forms.
+- [ ] Implement the consent information update workflow, if UMP is adopted.
+- [ ] Implement required consent forms, if applicable.
 - [ ] Implement the privacy options entry point if required.
-- [ ] Ensure advertising requests respect the resulting consent state.
+- [ ] Ensure advertising requests respect the resulting consent state and applicable legal requirements.
 - [ ] Test consent behavior with different regional and network scenarios.
 - [ ] Verify that consent errors do not interrupt core application functionality.
 - [ ] Update the public Privacy Policy and Google Play Data Safety declaration.
 
 ---
 
-## 13. Document Status
+# 13. Document Status
 
 This document defines the intended consent-management requirements for SlideTone.
 
@@ -260,3 +264,6 @@ Google AdMob has been selected, but the advertising SDK has not yet been integra
 Google UMP remains under evaluation and must not be represented as an implemented component until its integration is confirmed.
 
 All implementation requirements must be verified against the final SDK versions, configuration, and applicable privacy regulations before the document is approved.
+
+**Developer:** Techminds  
+**Privacy contact:** nairongoncalves@gmail.com
